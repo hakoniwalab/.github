@@ -2,50 +2,102 @@
 
 **Validate before the real world.**
 
-Hakoniwa Lab, LLC develops modular simulation and verification infrastructure for robotics, drones, and embedded systems.
+**New to Hakoniwa? → [Getting Started](https://github.com/hakoniwalab/hakoniwa-getting-started)**
 
-We help engineers test control software, real firmware, sensors, failures, and complex system interactions in simulation — before taking risks with physical hardware.
+Hakoniwa Lab, LLC develops lightweight, modular simulation and verification infrastructure for robotics, drones, and embedded systems.
 
-Our ecosystem combines open-source technologies, commercial solutions, and engineering expertise.
+**Hakoniwa is a simulation hub — not just another simulator.**
+
+It connects heterogeneous physics engines, embedded firmware, robot controllers, sensors, and visualization tools through coordinated simulation time and PDU-based data exchange.
+
+By combining independent components, Hakoniwa enables engineers to build, test, and validate complex systems before deploying them to physical hardware.
+
+Our ecosystem includes open-source technologies, commercial solutions, and engineering services.
+
+## How Hakoniwa Works
+
+```mermaid
+flowchart TB
+    H["Hakoniwa Simulation Hub<br/>Time Coordination + PDU Data Exchange"]
+    P["Physics Engines<br/>MuJoCo / Drone / Robots"]
+    F["Embedded Firmware<br/>PX4 / ArduPilot / Athrill"]
+    R["Robot Control<br/>ROS 2 / Controllers"]
+    V["Visualization<br/>Three.js / Unity / Godot"]
+
+    P <--> H
+    F <--> H
+    R <--> H
+    V <--> H
+```
+
+Hakoniwa supports both in-process and distributed simulation configurations, allowing components to be developed, replaced, and verified independently.
 
 ## What We Build
 
-**Drone Simulation & Verification**
+### Drone Simulation & Verification
 
-Physics-based drone simulation, PX4/ArduPilot integration, sensor modeling, and fault injection.
+Physics-based drone simulation, PX4/ArduPilot integration, sensor error modeling, control validation, and fault injection.
 
-**Embedded Firmware Simulation**
+Related projects: [Sensor Adapter](https://github.com/hakoniwalab/hakoniwa-sensor-adapter) · [PX4 Control Adapter](https://github.com/hakoniwalab/hakoniwa-drone-control-adapter-px4)
 
-Run unmodified flight-controller firmware on virtual microcontrollers using Athrill, including drivers, interrupts, and peripheral behavior.
+### Embedded Firmware Simulation
 
-**Robot Simulation & ROS 2**
+Run unmodified flight-controller firmware on virtual microcontrollers, including RTOS execution, interrupts, DMA, peripheral drivers, and fault scenarios.
 
-Composable robot runtimes integrating MuJoCo physics, ROS 2 control, sensors, and actuators.
+Related projects: [Athrill STM32](https://github.com/hakoniwalab/athrill-target-stm32) · [Athrill Studio](https://github.com/hakoniwalab/athrill-studio)
 
-**Distributed & Multi-System Simulation**
+### Robot Simulation & ROS 2
 
-Coordinated simulation of multiple robots, vehicles, software components, and runtime domains.
+Composable robot runtimes integrating MuJoCo physics, ROS 2 control, sensors, and actuators for mobile robots and manipulators.
+
+Related projects: [Robot Runtime](https://github.com/hakoniwalab/hakoniwa-robot-runtime) · [MuJoCo Robots](https://github.com/hakoniwalab/hakoniwa-mujoco-robots)
+
+### Distributed & Multi-System Simulation
+
+Coordinated execution of multiple robots, vehicles, controllers, and simulation domains with explicit time and data coordination.
+
+Related projects: [Core PRO](https://github.com/hakoniwalab/hakoniwa-core-pro) · [Conductor](https://github.com/hakoniwalab/hakoniwa-conductor) · [Urban Mobility](https://github.com/hakoniwalab/hakoniwa-urban-mobility)
 
 ## Explore Our Projects
 
-**[Hakoniwa Business Pack](https://github.com/hakoniwalab/hakoniwa-business-pack)** — AI-assisted component discovery and reproducible simulation Recipes.
+**[Hakoniwa Business Pack](https://github.com/hakoniwalab/hakoniwa-business-pack)**
 
-**[Athrill STM32](https://github.com/hakoniwalab/athrill-target-stm32)** — Virtual Pixhawk firmware execution and testing.
+An AI-assisted catalog and recipe hub for discovering, composing, and reproducing simulation systems.
 
-**[Hakoniwa Robot Runtime](https://github.com/hakoniwalab/hakoniwa-robot-runtime)** — Composable robot execution with MuJoCo and ROS 2.
+**[Athrill STM32](https://github.com/hakoniwalab/athrill-target-stm32)**
 
-**[Hakoniwa Urban Mobility](https://github.com/hakoniwalab/hakoniwa-urban-mobility)** — Multi-vehicle simulation in PLATEAU urban environments.
+Virtual STM32-based firmware execution and verification, including PX4 and ArduPilot.
 
-**[Hakoniwa Core PRO](https://github.com/hakoniwalab/hakoniwa-core-pro)** — Core runtime extensions for simulation coordination.
+**[Hakoniwa Robot Runtime](https://github.com/hakoniwalab/hakoniwa-robot-runtime)**
+
+Composable robot execution integrating MuJoCo, ROS 2 control, and Hakoniwa PDU.
+
+**[Hakoniwa Urban Mobility](https://github.com/hakoniwalab/hakoniwa-urban-mobility)**
+
+Multi-vehicle simulation in PLATEAU urban environments, combining drones, ground vehicles, and visualization.
+
+## Foundation
+
+The simulation infrastructure is built on reusable runtime and coordination technologies.
+
+- [Hakoniwa Core (TOPPERS)](https://github.com/toppers/hakoniwa-core-cpp) — Open-source core simulation infrastructure.
+- [Hakoniwa Core PRO](https://github.com/hakoniwalab/hakoniwa-core-pro) — Extended runtime capabilities and event-driven simulation.
+- [Hakoniwa Conductor](https://github.com/hakoniwalab/hakoniwa-conductor) — Coordination across multiple simulation domains.
 
 ## Commercial Solutions
 
-**[Hakoniwa Drone PRO](https://hakoniwa-lab.net/products/drone-license/)** — Advanced drone simulation and validation for commercial development.
+**[Hakoniwa Drone PRO](https://hakoniwa-lab.net/products/drone-license/)**
 
-## Get Started
+Advanced drone simulation and verification for professional development, including control integration, sensor modeling, and fault validation.
 
-[Getting Started](https://github.com/hakoniwalab/hakoniwa-getting-started) · [Official Website](https://hakoniwa-lab.net/)
+We also provide engineering support for integrating Hakoniwa into customer-specific simulation and verification environments.
 
-For technical collaboration, commercial licensing, or integration support:
+## Connect With Us
 
-**tmori@hakoniwa-lab.net**
+We welcome technical collaboration, open-source contributions, and commercial partnerships.
+
+**Website:** https://hakoniwa-lab.net/
+
+**Email:** tmori@hakoniwa-lab.net
+
+**日本語:** [箱庭ラボ公式サイト](https://hakoniwa-lab.net/)

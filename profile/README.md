@@ -1,30 +1,51 @@
 # Hakoniwa Lab 🏡
 
-**Hakoniwa Lab** is an open simulation initiative bridging physical and digital realities through modular, extensible systems.
+**Validate before the real world.**
 
-We develop simulation tools that enable rich interaction between robotics, XR, and real-world systems — from physics engines to immersive visualization.
+Hakoniwa Lab, LLC develops modular simulation and verification infrastructure for robotics, drones, and embedded systems.
 
----
+We help engineers test control software, real firmware, sensors, failures, and complex system interactions in simulation — before taking risks with physical hardware.
 
-## 🔧 Projects
+Our ecosystem combines open-source technologies, commercial solutions, and engineering expertise.
 
-- [hakoniwa-unity-drone](https://github.com/hakoniwalab/hakoniwa-unity-drone)  
-  Unity-based visualization system for drones and cyber-physical environments
+## What We Build
 
-- [hakoniwa-mujoco-robots](https://github.com/hakoniwalab/hakoniwa-mujoco-robots)  
-  High-precision physical simulation of multibody robots using MuJoCo
+**Drone Simulation & Verification**
 
----
+Physics-based drone simulation, PX4/ArduPilot integration, sensor modeling, and fault injection.
 
-## 🌐 Website
+**Embedded Firmware Simulation**
 
-👉 [https://hakoniwa-lab.net](https://hakoniwa-lab.net)
+Run unmodified flight-controller firmware on virtual microcontrollers using Athrill, including drivers, interrupts, and peripheral behavior.
 
----
+**Robot Simulation & ROS 2**
 
-## 🧑‍💻 Join Us
+Composable robot runtimes integrating MuJoCo physics, ROS 2 control, sensors, and actuators.
 
-We welcome collaboration, contributions, and conversations.  
-If you're interested in building the future of simulation with us, feel free to reach out.
+**Distributed & Multi-System Simulation**
 
-📬 tmori@hakoniwa-lab.net  
+Coordinated simulation of multiple robots, vehicles, software components, and runtime domains.
+
+## Explore Our Projects
+
+**[Hakoniwa Business Pack](https://github.com/hakoniwalab/hakoniwa-business-pack)** — AI-assisted component discovery and reproducible simulation Recipes.
+
+**[Athrill STM32](https://github.com/hakoniwalab/athrill-target-stm32)** — Virtual Pixhawk firmware execution and testing.
+
+**[Hakoniwa Robot Runtime](https://github.com/hakoniwalab/hakoniwa-robot-runtime)** — Composable robot execution with MuJoCo and ROS 2.
+
+**[Hakoniwa Urban Mobility](https://github.com/hakoniwalab/hakoniwa-urban-mobility)** — Multi-vehicle simulation in PLATEAU urban environments.
+
+**[Hakoniwa Core PRO](https://github.com/hakoniwalab/hakoniwa-core-pro)** — Core runtime extensions for simulation coordination.
+
+## Commercial Solutions
+
+**[Hakoniwa Drone PRO](https://hakoniwa-lab.net/products/drone-license/)** — Advanced drone simulation and validation for commercial development.
+
+## Get Started
+
+[Getting Started](https://github.com/hakoniwalab/hakoniwa-getting-started) · [Official Website](https://hakoniwa-lab.net/)
+
+For technical collaboration, commercial licensing, or integration support:
+
+**tmori@hakoniwa-lab.net**

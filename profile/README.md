@@ -2,6 +2,10 @@
 
 **Validate before the real world.**
 
+https://github.com/user-attachments/assets/fafd84bd-c07b-4a85-87c3-03269dacc6b2
+
+*Unmodified PX4 v1.17.0 runs on an emulated Pixhawk 4 ([Athrill](https://github.com/hakoniwalab/athrill-target-stm32)) and flies a simulated x500. A motor is stopped inside the emulated DShot ESC; PX4 detects the failure from the ESC telemetry with its own drivers.*
+
 **New to Hakoniwa? → [Getting Started](https://github.com/hakoniwalab/hakoniwa-getting-started)**
 
 Hakoniwa Lab, LLC develops lightweight, modular simulation and verification infrastructure for robotics, drones, and embedded systems.
@@ -66,7 +70,7 @@ An AI-assisted catalog and recipe hub for discovering, composing, and reproducin
 
 **[Athrill STM32](https://github.com/hakoniwalab/athrill-target-stm32)**
 
-Virtual STM32-based firmware execution and verification, including PX4 and ArduPilot.
+Unmodified PX4, ArduPilot and Zephyr firmware on emulated STM32 boards (Pixhawk 4 / 6C), with their RTOS, interrupts, DMA and drivers.
 
 **[Hakoniwa Robot Runtime](https://github.com/hakoniwalab/hakoniwa-robot-runtime)**
 
